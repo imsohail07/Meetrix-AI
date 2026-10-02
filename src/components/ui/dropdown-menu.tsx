@@ -53,6 +53,12 @@ function DropdownMenuGroup({ ...props }: MenuPrimitive.Group.Props) {
   return <MenuPrimitive.Group data-slot="dropdown-menu-group" {...props} />
 }
 
+/**
+ * Renders a styled dropdown label as a div, with optional inset spacing.
+ *
+ * @param props - Div attributes and an inset flag to align the label with menu items.
+ * @returns The styled label element.
+ */
 function DropdownMenuLabel({
   className,
   inset,

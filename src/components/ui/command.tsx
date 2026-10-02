@@ -33,6 +33,13 @@ function Command({
   )
 }
 
+/**
+ * Renders a command palette in a dialog with a visually hidden title and description.
+ * Wraps children in Command to provide command navigation and filtering.
+ *
+ * @param props - Dialog options, accessible text, content styling, and command children.
+ * @returns The dialog containing the command palette.
+ */
 function CommandDialog({
   title = "Command Palette",
   description = "Search for a command to run...",
