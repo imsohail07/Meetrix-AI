@@ -8,6 +8,7 @@ import { GeneratedAvatar } from "@/components/generated-avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -119,12 +120,14 @@ export const DashboardUserButton = () => {
         <ChevronDownIcon className="size-4 shrink-0" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" side="right" className="w-72">
-        <DropdownMenuLabel>
-          <div className="flex flex-col gap-1">
-            <span className="font-medium truncate">{data.user.name}</span>
-            <span className="text-sm font-normal text-muted-foreground truncate">{data.user.email}</span>
-          </div>
-        </DropdownMenuLabel>
+        <DropdownMenuGroup>
+          <DropdownMenuLabel>
+            <div className="flex flex-col gap-1">
+              <span className="font-medium truncate">{data.user.name}</span>
+              <span className="text-sm font-normal text-muted-foreground truncate">{data.user.email}</span>
+            </div>
+          </DropdownMenuLabel>
+        </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem
           className="cursor-pointer flex items-center justify-between"
